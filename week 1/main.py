@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay , roc_curve
 
-def neural_net(X_train_scaled , y_train , PLOT = False , num_epochs = 15 , input_shape =12 , train = True):
+def neural_net(X_train_scaled , y_train , PLOT = False , num_epochs = 80 , input_shape =12 , train = True):
     # Build the neural network
     model = keras.Sequential([
         keras.layers.Dense(256, activation='relu', input_shape=(input_shape,), kernel_regularizer=regularizers.l2(0.01)),
@@ -144,7 +144,7 @@ data = pd .read_csv("/home/brian/PycharmProjects/allison learing/churn.csv")
 full_data = data.copy()
 full_data = pd.get_dummies(full_data)
 
-## scla the data 
+## scale the data 
 X_train , Y_train , X_test  , Y_test = Scaler(full_data)
 
 ## dimensionality reduction
