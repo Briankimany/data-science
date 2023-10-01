@@ -12,7 +12,7 @@ steps to Create a machine learning model tha predicts whether a custor is likely
 
 ### Step 1: Problem Understanding and Data Collection
 
-Understand the business problem: Its  very clear from the question that predicting customer churn is the problem to be solved.
+The objective of this project is to develop a machine learning model that predicts whether customers are likely to churn (leave) a telecommunications company based on historical data, enabling the company to proactively address customer retention strategies.
 
 Collect relevant data:which may directly or indirectly influence churn  and churn labels (whether a customer has churned or not).
 The data is collected from 
@@ -24,13 +24,13 @@ Its a fataset showing the churn rate of certain bank
 ### Step 2: Data Cleaning and Preprocessing
 
 Data Cleaning: Handle missing values, duplicates, and outliers to ensure the quality of the dataset.
-For me the data i got from kagle and it doesn`t  have missing values but this i how i would clean the data to check for missing values
+The dataset from Kaggle is assumed to be clean with no missing values.However, it's important to verify this by checking for null values
 
 ```python 
 # load the data from local storage
 data = pd .read_csv("path to data")
 
-# cheking for null values
+# cheking for missing  values
 data.describe()
 
 
@@ -92,9 +92,11 @@ X_train_pca , X_test_pca = pca_trans(X_train , X_test , n_comp = 12)
 
 
 
-Choose suitable machine learning algorithms for classification. Common choices include logistic regression, decision trees, random forests, gradient boosting, and neural networks.
-For this project i used a neral networks.
+Choose suitable machine learning algorithms for classification.
+Common choices include logistic regression, decision trees, random forests, gradient boosting, and neural networks.
 
+
+For this project i used a neral networks.
 This is due to that they woked well with this data set and produced an Area Under the Curve value(AUC) that was better compared to LR AND Randomforest
 ```python 
 
@@ -161,9 +163,9 @@ Fine-tune hyperparameters using techniques like grid search or random search to 
 
 ### Step 6: Model Evaluation 
 
-To evaluate the model , i used a cutom funtion calles compute_metrics which 
->plots the ROC curve, or receiver operating characteristic curve
->Also  the condusion matrix for the classifications
+To evaluate the model, I used a custom function called `compute_metrics`, which:
+- Plots the ROC curve, or receiver operating characteristic curve.
+- Also, the confusion matrix for the classifications.
 
 Getting the models prediction  and printing the accuracy value
 ```python 
@@ -228,5 +230,4 @@ def compute_metrics(y_pred ,Y_test , thresh ):
 ```
 ### Step 8: Model Deployment
 
-
-    
+In this final step, the trained machine learning model is made accessible for practical use within the organization's systems. This often involves integrating the model into the company's existing software or platforms, allowing it to make real-time predictions on new customer data
