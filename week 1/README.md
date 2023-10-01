@@ -70,9 +70,6 @@ def Scaler(new_data , ratio = 9000):
 X_train , Y_train , X_test  , Y_test = Scaler(full_data)
 
 ## dimensionality reduction
-
-
-# Reducing the number of columns
 def pca_trans(X_train , X_test , n_comp = 12):
     from sklearn.decomposition import PCA
     shape_1 = X_train.shape
