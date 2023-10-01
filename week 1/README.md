@@ -1,6 +1,5 @@
 
 ### NOTE
-Thefile project contains code to detrmine model to use
 
 The main.py hass the whole model in one script 
 
