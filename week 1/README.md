@@ -16,7 +16,7 @@ The objective of this project is to develop a machine learning model that predic
 Collect relevant data:which may directly or indirectly influence churn  and churn labels (whether a customer has churned or not).
 The data is collected from 
 
-[kaggle] (https://www.kaggle.com/datasets/blastchar/telco-customer-churn/download?datasetVersionNumber=1)
+- [kaggle] (https://www.kaggle.com/datasets/blastchar/telco-customer-churn/download?datasetVersionNumber=1)
 
 Its a fataset showing the churn rate of certain bank
 
