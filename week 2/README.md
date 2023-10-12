@@ -195,4 +195,4 @@ segment_counts.plot(kind = 'bar')
 
 ```
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jb62472i9lt4pcnodn9e.png)
+![Image description](https://github.com/Briankimany/data-science/blob/main/week%202/Untitled.png)
