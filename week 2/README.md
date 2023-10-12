@@ -180,7 +180,7 @@ final_data['Customer-Segment'] = final_data.apply(update_customer_segment, axis=
 ```
 
 
-## ***Step 5: visualization of the customer-segnments***
+## ***Step 5: visualization of the customer-segments***
 
 
 
