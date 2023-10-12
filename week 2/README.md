@@ -186,13 +186,14 @@ final_data['Customer-Segment'] = final_data.apply(update_customer_segment, axis=
 
 
 ```python
+
 col = 'Customer-Segment'
-segment_counts = final_data_1[col].value_counts()
+customer_counts= final_data_1[col].value_counts()
 
 
-segment_counts.plot(kind = 'bar')
+customer_counts.plot(kind = 'bar')
 
 
 ```
 
-![Image description](https://github.com/Briankimany/data-science/blob/main/week%202/Untitled.png)
+![Image description](https://github.com/Briankimany/data-science/blob/main/week%202/BARPLOT.png)
